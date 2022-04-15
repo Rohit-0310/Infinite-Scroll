@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite-Scroll</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: repeat(5, 18%);
+            grid-gap: 2%;
+            margin: 5%;
+
+        }
+
+        @media (max-width: 1200px) {
+            .main{
+                display: grid;
+                grid-template-columns: repeat(4, 25%);
+                grid-gap: 2%;
+                margin: 5%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .main{
+                display: grid;
+                grid-template-columns: repeat(3, 32%);
+                grid-gap: 2%;
+                margin: 3%;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+            .main{
+                display: grid;
+                grid-template-columns: repeat(2, 48%);
+                grid-gap: 2%;
+                margin: 10%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .main{
+                display: grid;
+                grid-template-columns: repeat(1, 88%);
+                grid-gap: 2%;
+                margin: 10%;
+            }
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Infinite-Scrolling</h1>
+    <div  class="main"></div>
+<script src="./script.js"></script>
+</body>
+</html>
